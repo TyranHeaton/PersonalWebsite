@@ -2,75 +2,52 @@
 title: "About Me"
 ---
 
-![Professional headshot](images/headshot.jpg){width=300px fig-alt="Professional photo of [Your Name]"}
+![Professional photo](images/Tyran_image2.jpg){width=300px fig-alt="Professional photo of Tyran Heaton"}
 
 ## Introduction
 
-Hello! I'm a **Computer Science** student at **Brigham Young University**, currently in my **[year, e.g., junior/senior]** year with an emphasis in **Machine Learning**. I'm passionate about leveraging data science and artificial intelligence to solve real-world problems and create meaningful impact. My academic interests include machine learning, statistical modeling, and software development, and I'm always eager to learn new technologies and methodologies.
+I'm a **Computer Science** student at **Brigham Young University**, currently in my **Senior** year with an emphasis in **Machine Learning**. I'm passionate about leveraging artificial intelligence to solve real-world problems and create meaningful impact. My academic interests include AI, ML, and Software Engineering, and I'm always eager to learn new technologies and methodologies.
 
 ## Education
 
 ### Brigham Young University
 **Bachelor of Science in Computer Science**  
-*Expected Graduation:* [Month Year, e.g., April 2027]
+*Expected Graduation:* April 2027
 
 - **Emphasis:** Machine Learning
-- **Relevant Coursework:** Data Science, Statistical Analysis, Machine Learning, Algorithms, Database Systems, Software Engineering, Statistics 386
-- **GPA:** [Your GPA] *(optional)*
 
 ## Experience
 
-### [Job Title] - [Company Name]
-*[Month Year] - [Month Year or Present]*
+### Technical Intern - FamilySearch
+*June 2025 - December 2025*
 
-- Developed and implemented machine learning models that improved [specific metric] by [X]%
-- Collaborated with cross-functional teams to deliver data-driven solutions
-- Utilized Python, SQL, and various ML frameworks to analyze large datasets
+- Leveraged machine learning to develop AI-driven software for autonomously extracting metadata from historical records
+- Testing LLM results against ground truth datasets for exploratory data analysis and performance metrics.
 
-### Research Assistant - [Lab/Professor Name]
-*[Month Year] - [Month Year or Present]*
 
-- Conducted research on [research topic] under the supervision of [Professor Name]
-- Implemented algorithms for [specific task] using Python and TensorFlow
-- Presented findings at [conference/symposium] and contributed to [publication]
+### Research Assistant - [BYU Statistics/Professor Matthew Heaton]
+*June 2023 - August 2024*
 
-### Data Science Intern - [Company Name]
-*[Month Year] - [Month Year]*
+- Predictive modeling with machine learning models
+- Deepened understanding of Data Science processes
 
-- Performed exploratory data analysis on customer behavior datasets
-- Built predictive models to forecast [specific outcome]
-- Created interactive dashboards using Tableau and Python visualization libraries
+### Volunteer Work - The Church of Jesus Christ of Latter-day Saints
+*December 2019 - November 2021*
 
-### [Project Name] - Personal Project
-*[Month Year] - [Month Year]*
+- Full-time Missionary
+- Serving in Argentina and the Navajo Reservation
 
-- Designed and developed a full-stack application that [description of functionality]
-- Integrated machine learning models to provide [specific feature]
-- Technologies used: Python, React, PostgreSQL, AWS
-
-### Volunteer Work - [Organization Name]
-*[Month Year] - [Month Year]*
-
-- Taught coding fundamentals to underprivileged youth in the community
-- Mentored students in developing their first programming projects
-- Organized and led workshops on data literacy and technology careers
 
 ## Skills
 
 ### Programming Languages
-- **Proficient:** Python, SQL, R
-- **Familiar:** Java, JavaScript, C++, HTML/CSS
-
-### Data Science & Machine Learning
-- **Libraries & Frameworks:** Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch
-- **Statistical Analysis:** Hypothesis testing, regression analysis, time series analysis
-- **Visualization:** Matplotlib, Seaborn, Plotly, Tableau, ggplot2
+- **Proficient:** Python, Java
+- **Familiar:** C, C++, HTML/CSS, SQL
 
 ### Tools & Technologies
-- **Development:** Git/GitHub, Jupyter Notebooks, VS Code, RStudio
-- **Cloud Platforms:** AWS, Google Cloud Platform
-- **Databases:** PostgreSQL, MongoDB, MySQL
-- **Other:** Quarto, Markdown, Docker, Linux/Unix
+- **Development:** Git/GitHub, IntelliJ, VS Code, PyCharm
+- **Cloud Platforms:** AWS, Amazon Bedrock, Splunk 
+- **Other:** Windows, Linux 
 
 ### Soft Skills
 - Problem-solving and analytical thinking
@@ -81,37 +58,16 @@ Hello! I'm a **Computer Science** student at **Brigham Young University**, curre
 
 ## Get to Know Me
 
-Beyond my academic and professional pursuits, I'm a well-rounded individual with diverse interests and passions.
+Beyond my academic and professional pursuits, I'm a dedicated competetive dancer, specifcally in the Standard and Latin styles of Ballroom dance.
 
-### Hobbies & Interests
-- **Outdoor Activities:** I love hiking, camping, and exploring national parks. There's nothing quite like disconnecting from technology and reconnecting with nature.
-- **Photography:** I enjoy capturing landscapes and candid moments, which has also improved my eye for data visualization aesthetics.
-- **Reading:** I'm an avid reader of both fiction (especially sci-fi) and non-fiction (biographies, tech innovation books).
-- **Gaming:** Strategy and puzzle games help me think critically and approach problems from different angles.
+### Achievements 
+- **Three-year BYU Ballroom Dance Touring Team Member** I won three national championships, a British Blackpool championship, and performed in Europe, Africa, and Asia with the team.
+- **Individual Awards** Numerous finals appearances in multiple competitions over the years, including a National Championship.
 
 ### Fun Facts
-- I've hiked to the summit of [mountain/trail name] and completed [number] national park visits
-- I can solve a Rubik's cube in under [time] minutes
-- I'm learning [language] and hope to become conversational by next year
-- I once built a [fun project, e.g., "chess-playing robot"] for a hackathon and won [award]
-- My favorite programming language debate is [playful opinion about a language]
+- I love to ski
+- I'm a for-life BYU sports fan
+- Love watching movies
 
-### Community Involvement
-Outside of work and academics, I'm committed to giving back to my community through:
-- Volunteering at local coding clubs and STEM education programs
-- Contributing to open-source projects on GitHub
-- Mentoring younger students interested in computer science and data science
-
----
-
-## Contact
-
-Feel free to reach out if you'd like to connect, collaborate, or just chat about data science and technology!
-
-- **Email:** your.email@byu.edu or personal@email.com
-- **GitHub:** [github.com/TyranHeaton](https://github.com/TyranHeaton)
-- **LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
-
----
 
 *This portfolio showcases my learning progress, projects, and professional journey in data science and computer science.*
