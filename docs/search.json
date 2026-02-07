@@ -1,33 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to My Data Science Portfolio",
-    "section": "",
-    "text": "Welcome to my data science portfolio! This site shows my journey learning data science and analytics. Here you’ll find projects that demonstrate what I’ve learned and discovered.\n\n\nThis portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages.\n\n\n\n\nProgramming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data\n\n\n\n\n\n\n\nLearn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
-  },
-  {
-    "objectID": "index.html#about-this-portfolio",
-    "href": "index.html#about-this-portfolio",
-    "title": "Welcome to My Data Science Portfolio",
-    "section": "",
-    "text": "This portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages."
-  },
-  {
-    "objectID": "index.html#skills-im-learning",
-    "href": "index.html#skills-im-learning",
-    "title": "Welcome to My Data Science Portfolio",
-    "section": "",
-    "text": "Programming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data"
-  },
-  {
-    "objectID": "index.html#my-projects",
-    "href": "index.html#my-projects",
-    "title": "Welcome to My Data Science Portfolio",
-    "section": "",
-    "text": "Learn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
-  },
-  {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
     "title": "Projects Overview",
@@ -58,46 +30,81 @@
     ]
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "Welcome to my data science portfolio! This site shows my journey learning data science and analytics. Here you’ll find projects that demonstrate what I’ve learned and discovered.\n\n\nThis portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages.\n\n\n\n\nProgramming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data\n\n\n\n\n\n\n\nLearn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
+  },
+  {
+    "objectID": "index.html#about-this-portfolio",
+    "href": "index.html#about-this-portfolio",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "This portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages."
+  },
+  {
+    "objectID": "index.html#skills-im-learning",
+    "href": "index.html#skills-im-learning",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "Programming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data"
+  },
+  {
+    "objectID": "index.html#my-projects",
+    "href": "index.html#my-projects",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "Learn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "Write a brief introduction about yourself here. Include:\n\nYour academic background\nYour interest in data science\nYour career goals\nAny relevant experience or projects"
+    "text": "Professional headshot"
   },
   {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
+    "objectID": "about.html#introduction",
+    "href": "about.html#introduction",
     "title": "About Me",
-    "section": "",
-    "text": "Write a brief introduction about yourself here. Include:\n\nYour academic background\nYour interest in data science\nYour career goals\nAny relevant experience or projects"
+    "section": "Introduction",
+    "text": "Introduction\nHello! I’m a Computer Science student at Brigham Young University, currently in my [year, e.g., junior/senior] year with an emphasis in Machine Learning. I’m passionate about leveraging data science and artificial intelligence to solve real-world problems and create meaningful impact. My academic interests include machine learning, statistical modeling, and software development, and I’m always eager to learn new technologies and methodologies."
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
     "title": "About Me",
     "section": "Education",
-    "text": "Education\n\n[Your Degree] - [University Name], [Year]\nRelevant Coursework: Statistics, Data Analysis, Programming, etc."
+    "text": "Education\n\nBrigham Young University\nBachelor of Science in Computer Science\nExpected Graduation: [Month Year, e.g., April 2027]\n\nEmphasis: Machine Learning\nRelevant Coursework: Data Science, Statistical Analysis, Machine Learning, Algorithms, Database Systems, Software Engineering, Statistics 386\nGPA: [Your GPA] (optional)"
   },
   {
-    "objectID": "about.html#skills-interests",
-    "href": "about.html#skills-interests",
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
     "title": "About Me",
-    "section": "Skills & Interests",
-    "text": "Skills & Interests\n\nTechnical Skills\n\nProgramming: Python\nData Analysis: Pandas, NumPy\nVisualization: Matplotlib, Seaborn\nMachine Learning: Scikit-learn\nTools: Jupyter Notebooks, Git/GitHub\n\n\n\nAreas of Interest\n\n[Your specific interests, e.g., environmental data, healthcare analytics, finance, etc.]\n[Other areas you’re curious about]"
+    "section": "Experience",
+    "text": "Experience\n\n[Job Title] - [Company Name]\n[Month Year] - [Month Year or Present]\n\nDeveloped and implemented machine learning models that improved [specific metric] by [X]%\nCollaborated with cross-functional teams to deliver data-driven solutions\nUtilized Python, SQL, and various ML frameworks to analyze large datasets\n\n\n\nResearch Assistant - [Lab/Professor Name]\n[Month Year] - [Month Year or Present]\n\nConducted research on [research topic] under the supervision of [Professor Name]\nImplemented algorithms for [specific task] using Python and TensorFlow\nPresented findings at [conference/symposium] and contributed to [publication]\n\n\n\nData Science Intern - [Company Name]\n[Month Year] - [Month Year]\n\nPerformed exploratory data analysis on customer behavior datasets\nBuilt predictive models to forecast [specific outcome]\nCreated interactive dashboards using Tableau and Python visualization libraries\n\n\n\n[Project Name] - Personal Project\n[Month Year] - [Month Year]\n\nDesigned and developed a full-stack application that [description of functionality]\nIntegrated machine learning models to provide [specific feature]\nTechnologies used: Python, React, PostgreSQL, AWS\n\n\n\nVolunteer Work - [Organization Name]\n[Month Year] - [Month Year]\n\nTaught coding fundamentals to underprivileged youth in the community\nMentored students in developing their first programming projects\nOrganized and led workshops on data literacy and technology careers"
   },
   {
-    "objectID": "about.html#goals",
-    "href": "about.html#goals",
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
     "title": "About Me",
-    "section": "Goals",
-    "text": "Goals\nDescribe what you hope to achieve through your data science journey:\n\nShort-term learning objectives\nLong-term career aspirations\nTypes of problems you want to solve"
+    "section": "Skills",
+    "text": "Skills\n\nProgramming Languages\n\nProficient: Python, SQL, R\nFamiliar: Java, JavaScript, C++, HTML/CSS\n\n\n\nData Science & Machine Learning\n\nLibraries & Frameworks: Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch\nStatistical Analysis: Hypothesis testing, regression analysis, time series analysis\nVisualization: Matplotlib, Seaborn, Plotly, Tableau, ggplot2\n\n\n\nTools & Technologies\n\nDevelopment: Git/GitHub, Jupyter Notebooks, VS Code, RStudio\nCloud Platforms: AWS, Google Cloud Platform\nDatabases: PostgreSQL, MongoDB, MySQL\nOther: Quarto, Markdown, Docker, Linux/Unix\n\n\n\nSoft Skills\n\nProblem-solving and analytical thinking\nEffective communication and presentation\nTeam collaboration and leadership\nProject management and organization\nContinuous learning and adaptability"
+  },
+  {
+    "objectID": "about.html#get-to-know-me",
+    "href": "about.html#get-to-know-me",
+    "title": "About Me",
+    "section": "Get to Know Me",
+    "text": "Get to Know Me\nBeyond my academic and professional pursuits, I’m a well-rounded individual with diverse interests and passions.\n\nHobbies & Interests\n\nOutdoor Activities: I love hiking, camping, and exploring national parks. There’s nothing quite like disconnecting from technology and reconnecting with nature.\nPhotography: I enjoy capturing landscapes and candid moments, which has also improved my eye for data visualization aesthetics.\nReading: I’m an avid reader of both fiction (especially sci-fi) and non-fiction (biographies, tech innovation books).\nGaming: Strategy and puzzle games help me think critically and approach problems from different angles.\n\n\n\nFun Facts\n\nI’ve hiked to the summit of [mountain/trail name] and completed [number] national park visits\nI can solve a Rubik’s cube in under [time] minutes\nI’m learning [language] and hope to become conversational by next year\nI once built a [fun project, e.g., “chess-playing robot”] for a hackathon and won [award]\nMy favorite programming language debate is [playful opinion about a language]\n\n\n\nCommunity Involvement\nOutside of work and academics, I’m committed to giving back to my community through: - Volunteering at local coding clubs and STEM education programs - Contributing to open-source projects on GitHub - Mentoring younger students interested in computer science and data science"
   },
   {
     "objectID": "about.html#contact",
     "href": "about.html#contact",
     "title": "About Me",
     "section": "Contact",
-    "text": "Contact\n\nEmail: your.email@example.com\nGitHub: github.com/your-username\nLinkedIn: linkedin.com/in/your-profile\n\n\nThis portfolio showcases my learning progress and projects completed during my data science studies."
+    "text": "Contact\nFeel free to reach out if you’d like to connect, collaborate, or just chat about data science and technology!\n\nEmail: your.email@byu.edu or personal@email.com\nGitHub: github.com/TyranHeaton\nLinkedIn: linkedin.com/in/your-profile\n\n\nThis portfolio showcases my learning progress, projects, and professional journey in data science and computer science."
   },
   {
     "objectID": "projects/data-acquisition.html",
