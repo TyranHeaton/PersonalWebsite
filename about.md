@@ -25,7 +25,7 @@ I'm a **Computer Science** student at **Brigham Young University**, currently in
 - Testing LLM results against ground truth datasets for exploratory data analysis and performance metrics.
 
 
-### Research Assistant - [BYU Statistics/Professor Matthew Heaton]
+### Research Assistant - BYU Statistics
 *June 2023 - August 2024*
 
 - Predictive modeling with machine learning models
@@ -61,8 +61,10 @@ I'm a **Computer Science** student at **Brigham Young University**, currently in
 Beyond my academic and professional pursuits, I'm a dedicated competetive dancer, specifcally in the Standard and Latin styles of Ballroom dance.
 
 ### Achievements 
-- **Three-year BYU Ballroom Dance Touring Team Member** I won three national championships, a British Blackpool championship, and performed in Europe, Africa, and Asia with the team.
-- **Individual Awards** Numerous finals appearances in multiple competitions over the years, including a National Championship.
+- **Three-year BYU Ballroom Dance Touring Team Member** 
+I won three national championships, a British Blackpool championship, and performed in Europe, Africa, and Asia with the team.
+- **Individual Awards** 
+Numerous finals appearances in multiple competitions over the years, including a National Championship.
 
 ### Fun Facts
 - I love to ski
