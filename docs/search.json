@@ -83,7 +83,7 @@
     "href": "about.html#experience",
     "title": "About Me",
     "section": "Experience",
-    "text": "Experience\n\nTechnical Intern - FamilySearch\nJune 2025 - December 2025\n\nLeveraged machine learning to develop AI-driven software for autonomously extracting metadata from historical records\nTesting LLM results against ground truth datasets for exploratory data analysis and performance metrics.\n\n\n\nResearch Assistant - [BYU Statistics/Professor Matthew Heaton]\nJune 2023 - August 2024\n\nPredictive modeling with machine learning models\nDeepened understanding of Data Science processes\n\n\n\nVolunteer Work - The Church of Jesus Christ of Latter-day Saints\nDecember 2019 - November 2021\n\nFull-time Missionary\nServing in Argentina and the Navajo Reservation"
+    "text": "Experience\n\nTechnical Intern - FamilySearch\nJune 2025 - December 2025\n\nLeveraged machine learning to develop AI-driven software for autonomously extracting metadata from historical records\nTesting LLM results against ground truth datasets for exploratory data analysis and performance metrics.\n\n\n\nResearch Assistant - BYU Statistics\nJune 2023 - August 2024\n\nPredictive modeling with machine learning models\nDeepened understanding of Data Science processes\n\n\n\nVolunteer Work - The Church of Jesus Christ of Latter-day Saints\nDecember 2019 - November 2021\n\nFull-time Missionary\nServing in Argentina and the Navajo Reservation"
   },
   {
     "objectID": "about.html#skills",
@@ -118,5 +118,75 @@
     "crumbs": [
       "Final Project"
     ]
+  },
+  {
+    "objectID": "tutorials.html",
+    "href": "tutorials.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "tutorials.html#featured-tutorials",
+    "href": "tutorials.html#featured-tutorials",
+    "title": "",
+    "section": "Featured Tutorials",
+    "text": "Featured Tutorials\n\nSimple Linear Regression in Python: A beginner’s guide to predictive modeling\n\nHave a tutorial suggestion? Feel free to reach out!"
+  },
+  {
+    "objectID": "Tutorials/simple-linear-regression.html",
+    "href": "Tutorials/simple-linear-regression.html",
+    "title": "Simple Linear Regression in Python: A Beginner’s Guide",
+    "section": "",
+    "text": "Simple linear regression is one of the most fundamental statistical techniques that allows us to predict one variable using another. Whether you’re predicting which country will return humans to the moon first based on recent technological advances, or studying the relationship between movie box office success and production budgets, linear regression is a valuable tool.\nIn this tutorial, you’ll learn the mathematics behind simple linear regression, how to implement it in Python, and how to interpret your results. By the end, you’ll be able to build your own predictive models with confidence. Let’s dive in!"
+  },
+  {
+    "objectID": "Tutorials/simple-linear-regression.html#introduction",
+    "href": "Tutorials/simple-linear-regression.html#introduction",
+    "title": "Simple Linear Regression in Python: A Beginner’s Guide",
+    "section": "",
+    "text": "Simple linear regression is one of the most fundamental statistical techniques that allows us to predict one variable using another. Whether you’re predicting which country will return humans to the moon first based on recent technological advances, or studying the relationship between movie box office success and production budgets, linear regression is a valuable tool.\nIn this tutorial, you’ll learn the mathematics behind simple linear regression, how to implement it in Python, and how to interpret your results. By the end, you’ll be able to build your own predictive models with confidence. Let’s dive in!"
+  },
+  {
+    "objectID": "Tutorials/simple-linear-regression.html#what-is-simple-linear-regression",
+    "href": "Tutorials/simple-linear-regression.html#what-is-simple-linear-regression",
+    "title": "Simple Linear Regression in Python: A Beginner’s Guide",
+    "section": "What is Simple Linear Regression?",
+    "text": "What is Simple Linear Regression?\nSimple linear regression models the relationship between two variables using a straight line. The equation is:\n\\[y = \\beta_0 + \\beta_1x + \\epsilon\\]\nWhere: - \\(y\\) is the dependent variable (what we’re predicting) - \\(x\\) is the independent variable (what we’re using to predict) - \\(\\beta_0\\) is the y-intercept - \\(\\beta_1\\) is the slope - \\(\\epsilon\\) is the error term\nThe goal is to find the best values for \\(\\beta_0\\) and \\(\\beta_1\\) that minimize the sum of squared errors:\n\\[SSE = \\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2\\]\nwhere \\(\\hat{y}_i\\) represents our predicted values."
+  },
+  {
+    "objectID": "Tutorials/simple-linear-regression.html#sample-dataset",
+    "href": "Tutorials/simple-linear-regression.html#sample-dataset",
+    "title": "Simple Linear Regression in Python: A Beginner’s Guide",
+    "section": "Sample Dataset",
+    "text": "Sample Dataset\nLet’s work with a simple example: predicting exam scores based on hours studied. Here’s our dataset:\n\n\n\nStudent\nHours Studied (x)\nExam Score (y)\n\n\n\n\n1\n2\n65\n\n\n2\n3\n70\n\n\n3\n4\n75\n\n\n4\n5\n82\n\n\n5\n6\n85\n\n\n6\n7\n90"
+  },
+  {
+    "objectID": "Tutorials/simple-linear-regression.html#implementing-linear-regression-in-python",
+    "href": "Tutorials/simple-linear-regression.html#implementing-linear-regression-in-python",
+    "title": "Simple Linear Regression in Python: A Beginner’s Guide",
+    "section": "Implementing Linear Regression in Python",
+    "text": "Implementing Linear Regression in Python\nNow let’s implement this in Python using scikit-learn. First, we’ll need to import our libraries and prepare our data:\nimport numpy as np\nfrom sklearn.linear_model import LinearRegression\nimport matplotlib.pyplot as plt\n\n# Our data from the table above\nhours_studied = np.array([2, 3, 4, 5, 6, 7]).reshape(-1, 1)\nexam_scores = np.array([65, 70, 75, 82, 85, 90])\n\n# Create and train the model\nmodel = LinearRegression()\nmodel.fit(hours_studied, exam_scores)\n\n# Get the coefficients\nintercept = model.intercept_\nslope = model.coef_[0]\n\nprint(f\"Intercept (β₀): {intercept:.2f}\")\nprint(f\"Slope (β₁): {slope:.2f}\")\nprint(f\"Equation: y = {intercept:.2f} + {slope:.2f}x\")\n\n# Make a prediction\nhours = 5.5\npredicted_score = model.predict([[hours]])\nprint(f\"\\nPredicted score for {hours} hours: {predicted_score[0]:.2f}\")"
+  },
+  {
+    "objectID": "Tutorials/simple-linear-regression.html#interpreting-the-results",
+    "href": "Tutorials/simple-linear-regression.html#interpreting-the-results",
+    "title": "Simple Linear Regression in Python: A Beginner’s Guide",
+    "section": "Interpreting the Results",
+    "text": "Interpreting the Results\nWhen you run this code, you’ll get output similar to: - Intercept (β₀): ~55.08 - Slope (β₁): ~5.06\nThis means that for every additional hour studied, the exam score increases by approximately 5.06 points. The intercept suggests a baseline score of about 55.08 when study time is zero (though this may not be practically meaningful).\nThe prediction tells us that a student who studies 5.5 hours would likely score around 83 points on the exam."
+  },
+  {
+    "objectID": "Tutorials/simple-linear-regression.html#conclusion",
+    "href": "Tutorials/simple-linear-regression.html#conclusion",
+    "title": "Simple Linear Regression in Python: A Beginner’s Guide",
+    "section": "Conclusion",
+    "text": "Conclusion\nCongratulations! You’ve just learned the fundamentals of simple linear regression. You now understand the mathematical foundation behind the technique, how to implement it in Python using scikit-learn, and how to interpret your results.\nSimple linear regression is a powerful starting point for statistical modeling. While real-world problems often require more complex approaches, mastering this technique gives you a solid foundation for understanding more advanced statistical methods."
+  },
+  {
+    "objectID": "Tutorials/simple-linear-regression.html#next-steps",
+    "href": "Tutorials/simple-linear-regression.html#next-steps",
+    "title": "Simple Linear Regression in Python: A Beginner’s Guide",
+    "section": "Next Steps",
+    "text": "Next Steps\nReady to practice? Here’s what you can do:\n\nTry it yourself: Use this code with your own data. Think of two variables that might be related\nVisualize your results: Add matplotlib code to plot your regression line\nExplore further: Learn about R-squared values to measure model performance\n\nRemember, the best way to learn statistics is by doing. Start small, experiment often, and don’t be afraid to make mistakes.\n\nHave questions about this tutorial? Want to suggest improvements? Let me know!"
   }
 ]
