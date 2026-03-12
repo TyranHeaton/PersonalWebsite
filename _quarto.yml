@@ -13,6 +13,8 @@ website:
         href: index.md
       - text: "About Me"
         href: about.md
+      - text: "Blog Outline"
+        href: blog-outline.md
       - text: "Projects"
         menu:
           - text: "All Projects"
@@ -35,6 +37,7 @@ website:
   sidebar:
     - title: "Projects"
       contents:
+        - blog-outline.md
         - projects/index.md
         - projects/eda.qmd
         - projects/data-acquisition.qmd
