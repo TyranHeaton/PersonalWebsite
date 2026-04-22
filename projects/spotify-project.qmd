@@ -9,7 +9,7 @@ This collaborative project by **Brody Duncan**, **Nathan Jones**, and **Tyran He
 
 ## Project Materials
 
-- [Tutorial](../../../stat386-spotify-project-1/tutorial.html)
+- [Tutorial](tutorial.html)
 - [Documentation](spotify-documentation.qmd)
-- [Report](../../../stat386-spotify-project-1/report.html)
+- [Report](report.html)
 - [App](http://localhost:8501)
