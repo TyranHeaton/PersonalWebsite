@@ -1,0 +1,15 @@
+---
+title: "Spotify Project"
+format:
+  html:
+    toc: false
+---
+
+This collaborative project by **Brody Duncan**, **Nathan Jones**, and **Tyran Heaton** explores Spotify music data through a Python package and a Streamlit app. The project focuses on cleaning a large song dataset, analyzing audio-feature patterns, and building similarity-based recommendations.
+
+## Project Materials
+
+- [Tutorial](../../../stat386-spotify-project-1/tutorial.html)
+- [Documentation](spotify-documentation.qmd)
+- [Report](../../../stat386-spotify-project-1/report.html)
+- [App](http://localhost:8501)
