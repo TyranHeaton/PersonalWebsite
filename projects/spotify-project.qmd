@@ -9,7 +9,8 @@ This collaborative project by **Brody Duncan**, **Nathan Jones**, and **Tyran He
 
 ## Project Materials
 
-- [Tutorial](tutorial.html)
+- [Tutorial](tutorial.qmd)
 - [Documentation](spotify-documentation.qmd)
-- [Report](report.html)
-- [App](http://localhost:8501)
+- [Report](report.qmd)
+- [Repository](https://github.com/TyranHeaton/stat386-spotify-project)
+- [App](https://spotify-music-analysis.streamlit.app/)

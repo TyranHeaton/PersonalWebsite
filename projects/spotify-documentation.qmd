@@ -1,5 +1,8 @@
 ---
 title: "Spotify Project Documentation"
+format:
+    html:
+        toc: true
 execute:
   enabled: false
 ---
@@ -9,7 +12,7 @@ execute:
 
 ```{python}
 def column_cleaning(df):
-#Convert miliseconds into seconds and rename the column
+    # Convert milliseconds into seconds and rename the column
     df = df[df['duration_ms'] > 53000]
     df['duration_ms'] = df['duration_ms']/1000
     df = df.rename(columns = {'duration_ms' : 'duration_s'})
@@ -17,7 +20,7 @@ def column_cleaning(df):
     df['explicit'] = df['explicit'].map({1: 'Yes', 0: 'No'})
     return df
 ```
-The Spotify API defaults to storing song length in milliseconds. This function converts that to seconds to make values smaller and easier to understand. Additionally, this function changes the 1s and 0s in the `explicit` column to Yes and No.
+The Spotify API stores song length in milliseconds by default. This function converts those values to seconds so they are smaller and easier to interpret. It also changes the `explicit` column from `1` and `0` values to `Yes` and `No`.
 
 ```{python}
 
@@ -27,17 +30,17 @@ def reduce_list(df):
     df = df.groupby('artists').filter(lambda x: x['acousticness'].mean() <= .75)
     return df
 ```
-This function applies three different filters to the data. The first filter removes artists with fewer than 40 songs. The second removes artists with fewer than 10 unique years. The final filter removes highly acoustic artists, which often includes classical or instrumental catalogs. These filters help the data work better for individual artist analysis, especially in the app.
+This function applies three filters to the dataset. The first removes artists with fewer than 40 songs. The second removes artists with fewer than 10 unique years. The final filter removes highly acoustic artists, which often captures classical or instrumental catalogs. Together, these filters make the data more useful for individual artist analysis, especially in the app.
 
 ```{python}
 def fix_artists(df):
-    #Seperate out the lists in the artist column
+    # Separate the lists in the artist column
     df['artists'] = df['artists'].apply(ast.literal_eval)
     # One row per artist
     df = df.explode('artists')
     return df
 ```
-This function is needed to make the DataFrame easier to work with. The *artists* column is originally stored as a list when a song has multiple artists. For analysis and visualization, it is necessary to separate the list into separate entries.
+This function makes the DataFrame easier to work with. The `artists` column is originally stored as a list when a song has multiple artists. For analysis and visualization, it is more useful to separate that list into individual entries.
 
 ##### Analysis Functions
 
@@ -49,7 +52,7 @@ def artist_summary(df, artist):
     return df.describe()[['duration_s', 'energy', 'acousticness', 'tempo']]
 
 ```
-This function uses the built-in `describe()` function to create a table that includes summary statistics for the listed variables.
+This function uses the built-in `describe()` method to create a table of summary statistics for the selected variables.
 
 ```{python}
 
@@ -60,7 +63,7 @@ def feature_trend(df, feature):
 
     return df.groupby('year')[feature].mean().reset_index()
 ```
-This function is useful for analysis because it accepts a selected feature and returns each year with that feature's average value. It is useful for seeing how specific aspects of music have changed over time.
+This function accepts a selected feature and returns each year along with that feature's average value. It is useful for showing how specific aspects of music have changed over time.
 
 
 ```{python}
@@ -87,7 +90,7 @@ def top_songs(df, feature, n=10):
     # Return clean output
     return top[['name', 'artists', feature]]
 ```
-This function takes the selected feature and returns the top 10 songs ranked by that feature.
+This function takes a selected feature and returns the top songs ranked by that feature.
 
 ```{python}
 def song_variability(df):
@@ -100,7 +103,7 @@ def song_variability(df):
 
     return grouped.sort_values('overall_variability', ascending=False)
 ```
-This function is useful for measuring artist consistency. It takes five variables, calculates each artist's standard deviation for those variables, and then computes overall variability as the mean of those standard deviations. This helps identify which artists are the most and least variable across these features.
+This function measures artist consistency. It uses five variables, calculates each artist's standard deviation for those variables, and then computes overall variability as the mean of those standard deviations. This helps identify which artists are the most and least variable across those features.
 
 ```{python}
 def feature_correlations(df):
@@ -109,7 +112,7 @@ def feature_correlations(df):
 
     return df[features].corr()
 ```
-This function uses *'duration_s', 'energy', 'acousticness', 'tempo', and 'valence'* and then applies the built-in Python correlation method to create a 5x5 matrix showing the relationship between features.
+This function uses `duration_s`, `energy`, `acousticness`, `tempo`, and `valence`, then applies the built-in correlation method to create a `5 x 5` matrix showing the relationships among those features.
 
 
 ##### Recommendation Function
@@ -150,7 +153,7 @@ def recommend_similar(df, song_name, n=5):
 
     return df.iloc[top_idx][['name', 'artists']]
 ```
-This function allows the user to see *n* songs that are most similar to the selected song. It uses the `cosine_similarity()` function from the `sklearn` package to measure similarity in a multidimensional feature space.
+This function returns `n` songs that are most similar to a selected song. It uses the `cosine_similarity()` function from `sklearn` to measure similarity in a multidimensional feature space.
 
 
 ##### Streamlit App Functionality
@@ -176,7 +179,7 @@ st.set_page_config(page_title="Artist Exploration", layout='wide')
 DATA_PATH = 'app_data.csv'
 df = pd.read_csv(DATA_PATH)
 ```
-This first section of the app loads the required packages, imports the custom `recommend_similar` function, formats plot backgrounds to match the app style, and reads in the cleaned dataset used for all visuals and tables.
+This first section of the app loads the required packages, imports the custom `recommend_similar` function, formats plot backgrounds to match the app's style, and reads in the cleaned dataset used for all visuals and tables.
 
 ```{python}
 #Creates a unique list for every artist
@@ -187,7 +190,7 @@ artist_list.insert(0, 'All Artists')
 st.title("Spotify Artist Exploration")
 artist = st.selectbox('Select an artist:', options=artist_list)
 ```
-This section creates the app title and interactive dropdown menu. The dropdown includes every unique artist plus an `All Artists` option so users can choose between a full dataset view or a specific artist view.
+This section creates the app title and the interactive dropdown menu. The dropdown includes every unique artist plus an `All Artists` option so users can choose between a full-dataset view and a specific artist view.
 
 ```{python}
 #ALL ARTISTS
@@ -263,7 +266,7 @@ When `All Artists` is selected, the app displays the complete dataframe and crea
             ax.set_xlim(50, 220)
             st.pyplot(fig)
 ```
-Each of the three tabs in the `All Artists` view follows the same two-column layout. The left column shows a scatterplot of that feature's yearly average over time, using pre-computed averages (`durat_avg`, `acous_avg`, `tempo_avg`). The right column shows a histogram of that feature across every song in the full dataset, giving the user a sense of its overall distribution.
+Each of the three tabs in the `All Artists` view follows the same two-column layout. The left column shows a scatterplot of that feature's yearly average over time using precomputed averages (`durat_avg`, `acous_avg`, and `tempo_avg`). The right column shows a histogram of that feature across every song in the full dataset, giving the user a sense of its overall distribution.
 
 ```{python}
 # INDIVIDUAL ARTISTS
@@ -278,7 +281,7 @@ else:
         recs = recommend_similar(df, song)
         st.dataframe(recs)
 ```
-When a single artist is selected, the app filters to that artist, keeps years with at least three songs, and shows the resulting table. It also lets the user choose a song and click `Recommend` to return similar songs using the recommendation function from the package.
+When a single artist is selected, the app filters the dataset to that artist, keeps years with at least three songs, and shows the resulting table. It also lets the user choose a song and click `Recommend` to return similar songs using the recommendation function from the package.
 
 ```{python}
 with tab1:

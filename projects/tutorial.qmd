@@ -1,0 +1,95 @@
+---
+title: "Spotify Data Tutorial"
+format:
+  html:
+    toc: true
+    code-fold: true
+execute:
+  enabled: false
+---
+
+# Spotify Data Tutorial
+
+This package allows users to:
+
+- Load Spotify data
+- Clean and prepare datasets
+- Analyze artist and song patterns
+- Generate recommendations
+
+#### Getting Started
+To begin using the dataset, follow this [link](https://byu.box.com/s/laorpu7fwmi2wbk9qtfodrf104h7sxhr)
+to download the raw CSV file. This dataset contains nearly 170,000 songs and was obtained through the *Spotify API* before Spotify enhanced security and limited features in 2024. After downloading the file, load it into your program.
+```{python}
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+```
+**Make sure the CSV file is in your `data/` folder or another accessible location.**
+
+**Install the package by running `uv add stat386-spotify-project` in the terminal.**
+
+#### Data Cleanup
+Once the data is loaded, it is time for some basic cleanup. The `artists` column is formatted as a list to account for songs with multiple artists or featured collaborators. This makes analysis more difficult, so the first step is to clean that column.
+
+```{python}
+from spotify_tools.clean import fix_artists
+
+df = fix_artists(df)
+```
+This function separates the artists from the list into separate entries in the dataframe, making the data much easier to manipulate.
+
+Because 170,000 songs is a large amount of data to work with, this analysis narrows the dataset by removing classical or instrumental artists. In addition, artists with fewer than 40 songs are excluded because they do not provide enough data for meaningful individual analysis.
+
+```{python}
+from spotify_tools.clean import reduce_list
+
+df = reduce_list(df)
+```
+
+Next is some optional data cleaning. The `column_cleaning()` function converts the `duration_ms` column to seconds and changes the `explicit` column from `1` and `0` values to `Yes` and `No`. The dataset is then sorted by artist name, and the variables used in this analysis are selected. Additional columns are excluded for consistency and performance.
+
+```{python}
+from spotify_tools.clean import column_cleaning
+
+df = column_cleaning(df)
+
+df = df.sort_values(by ='artists').reset_index(drop = True)
+df = df[['name', 'artists', 'year', 'duration_s', 'tempo', 'acousticness', 'energy', 'valence', 'key', 'popularity', 'explicit']]
+df = df.drop_duplicates(subset=['name', 'artists']).reset_index(drop=True)
+```
+
+#### Basic Analysis
+After the data has been cleaned, you can begin the analysis. The primary questions in this project focus on **artist consistency and broader trends in music**. Because the dataset includes several useful audio features, it provides multiple ways to explore how consistent artists are across their catalogs. A good starting point is to view summary statistics for an individual artist.
+
+```{python}
+from spotify_tools.analysis import artist_summary
+
+artist_summary(df, artist = "Drake")
+```
+Running this command with a valid artist name returns summary statistics for that artist.
+
+You can also measure each artist's variability by using `artist_variability()`. This function calculates the standard deviation of key audio features for each artist and combines them into an overall variability score.
+``` {python}
+from spotify_tools.analysis import artist_variability
+
+artist_variability(df)
+```
+
+Additional commands for analysis:
+- `top_songs(df, feature, n)` → Returns top N songs ranked by a feature  
+- `feature_trend(df, feature)` → Shows how a feature changes over time  
+- `feature_correlations(df)` → Displays a correlation matrix of audio features
+
+*All of these functions can be imported from the `spotify_tools.analysis` package.*
+
+#### Extra Features
+One feature added during app development was the ability to find songs similar to a selected track. The `recommend_similar()` command does exactly that. Running the command below returns `n` songs that are similar to the song you choose.
+```{python}
+from spotify_tools.recommend import recommend_similar
+
+recommend_similar(df, song_name = "God's Plan", n = 5)
+```
+
+##### Important Note
+When using functions that require inputs such as **feature names, artist names, or song titles**, pass those values as strings in quotation marks.
